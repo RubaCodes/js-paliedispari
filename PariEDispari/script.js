@@ -14,6 +14,12 @@ function isEven(num) {
 
 // ---MAIN PROGRAM---
 //L’utente sceglie pari o dispari e inserisce un numero da 1 a 5.
+let userChoice;
+do{
+    userChoice = prompt('Inserire pari o dispari').toLowerCase();
+}while((userChoice != 'pari') && (userChoice != 'dispari') )
+
+//e inserisce un numero da 1 a 5
 let number;
 do {
     number = Number(prompt('Inserire un numero da 1 a 5'))
