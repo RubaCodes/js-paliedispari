@@ -1,4 +1,8 @@
-
+// ---FUNZIONI---
+//Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzione).
+function randomNumberRange(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
 
 
 
