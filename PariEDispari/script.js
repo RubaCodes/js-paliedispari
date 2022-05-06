@@ -29,9 +29,9 @@ do {
 const sum = number + randomNumberRange(1, 5);
 
 //Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)**** se pari vince user, altrimenti vince il pc******
-if(isEven(sum)){
-    console.log(`${sum} e' pari quindi HAI VINTO!!!`);
+if(isEven(sum) && userChoice == 'pari' || !isEven(sum) && userChoice == 'dispari'){
+    console.log(` Hai scelto ${userChoice} e la somma  vale ${sum} quindi HAI VINTO!!!`);
 }
-else{
-    console.log(`${sum} e' dispari quindi HAI PERSO!!!`);
+else {
+    console.log(` Hai scelto ${userChoice} e la somma  vale ${sum} quindi HAI PERSO!!!`);
 }
