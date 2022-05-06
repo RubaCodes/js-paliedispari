@@ -12,15 +12,6 @@ function isEven(num) {
 }
 
 
-
-
-
-
-
-
-
-
-
 // ---MAIN PROGRAM---
 //L’utente sceglie pari o dispari e inserisce un numero da 1 a 5.
 let number;
@@ -31,4 +22,10 @@ do {
 //Sommiamo i due numeri
 const sum = number + randomNumberRange(1, 5);
 
-//Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
+//Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)**** se pari vince user, altrimenti vince il pc******
+if(isEven(sum)){
+    console.log(`${sum} e' pari quindi HAI VINTO!!!`);
+}
+else{
+    console.log(`${sum} e' dispari quindi HAI PERSO!!!`);
+}
