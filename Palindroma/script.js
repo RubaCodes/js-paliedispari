@@ -23,7 +23,10 @@ function isPalindroma(word) {
 
 //parrola in input dall'utente
 const userInput = prompt('Inserisci una parola')
-//chiamo la funzione
-const result = isPalindroma(userInput);
-//stampo il risultato
-console.log(result);
+//se la parola immessa e' palindroma stampa e' palindroma altrimenti stampa non e' palindroma
+if (isPalindroma(userInput)) {
+    console.log(`La parola ${userInput} e' palindroma`);
+}
+else{
+    console.log(`La parola ${userInput}  non e' palindroma`);
+}
