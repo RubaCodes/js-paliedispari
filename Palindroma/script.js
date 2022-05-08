@@ -5,7 +5,7 @@ function isPalindroma(word) {
     const array = word.split('');
     let indexUp = 0;
     let indexDown = array.length - 1;
-    console.log(indexDown, indexUp);
+    //console.log(indexDown, indexUp);
     
     while (indexUp <= indexDown) {
         if (array[indexUp++] !== array[indexDown--]) {
