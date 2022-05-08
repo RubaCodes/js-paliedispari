@@ -8,9 +8,7 @@ function isPalindroma(word) {
     console.log(indexDown, indexUp);
     
     while (indexUp <= indexDown) {
-        if (array[indexUp] === array[indexDown]) {
-            indexUp++;
-            indexDown--;
+        if (array[indexUp++] === array[indexDown--]) {
         }else{
             return false;
         } 
